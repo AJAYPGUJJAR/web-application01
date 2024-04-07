@@ -1,9 +1,14 @@
 import React from "react";
+import MainHeader from "./components/headerfooter/MainHeader";
+import MainFooter from "./components/headerfooter/MainFooter";
+import MainBody from "./components/body/MainBody";
 
 function App() {
   return (
     <div>
-      <h1>Hello World..!</h1>
+      <MainHeader />
+      <MainBody />
+      <MainFooter />
     </div>
   );
 }
