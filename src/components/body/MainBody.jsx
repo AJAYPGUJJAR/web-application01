@@ -1,43 +1,26 @@
 import React from 'react'
-import '../Styles.css'
+import '../Styles.css';
+import ApplicationCard from './ApplicationCard';
 
 export default function MainBody() {
     return (
         <div className='container'>
             <div className='row application-cards'>
-                <div className='col-sm card-row-margin'>
-                    <div className="cardsize">Application 01</div>
-                </div>
-                <div className='col-sm card-row-margin'>
-                    <div className="cardsize">Application 02</div>
-                </div>
-                <div className='col-sm card-row-margin'>
-                    <div className="cardsize">Application 03</div>
-                </div>
+                <ApplicationCard appName='Application 01' />
+                <ApplicationCard appName='Application 02' />
+                <ApplicationCard appName='Application 03' />
             </div>
 
             <div className='row application-cards'>
-                <div className='col-sm card-row-margin'>
-                    <div className="cardsize">Application 04</div>
-                </div>
-                <div className='col-sm card-row-margin'>
-                    <div className="cardsize">Application 05</div>
-                </div>
-                <div className='col-sm card-row-margin'>
-                    <div className="cardsize">Application 06</div>
-                </div>
+                <ApplicationCard appName='Application 04' />
+                <ApplicationCard appName='Application 05' />
+                <ApplicationCard appName='Application 06' />
             </div>
 
             <div className='row application-cards'>
-                <div className='col-sm card-row-margin'>
-                    <div className="cardsize">Application 07</div>
-                </div>
-                <div className='col-sm card-row-margin'>
-                    <div className="cardsize">Application 08</div>
-                </div>
-                <div className='col-sm card-row-margin'>
-                    <div className="cardsize">Application 09</div>
-                </div>
+                <ApplicationCard appName='Application 07' />
+                <ApplicationCard appName='Application 08' />
+                <ApplicationCard appName='Application 09' />
             </div>
         </div>
     )
