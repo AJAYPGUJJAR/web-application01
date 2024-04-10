@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import '../Styles.css';
+import TicTacToe from '../Games/TicTacToe';
 
 export default function ApplicationCard(props) {
     const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -20,7 +21,8 @@ export default function ApplicationCard(props) {
             <div>
                 {isPopupOpen && <div className='popup-overlay'>
                     <div className='popup-content'>
-                        <p>PoP up content</p>
+                        {!(props.appName === "Tic-Tac-Toe") && <p>PoP up content</p>}
+                        {(props.appName === "Tic-Tac-Toe") && <TicTacToe />}
                     </div>
                     <button className='close-button' onClick={onClickHandleClose}> X </button>
                 </div>}

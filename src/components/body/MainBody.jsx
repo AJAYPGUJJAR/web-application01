@@ -6,7 +6,7 @@ export default function MainBody() {
     return (
         <div className='container'>
             <div className='row application-cards'>
-                <ApplicationCard appName='Application 01' />
+                <ApplicationCard appName='Tic-Tac-Toe' />
                 <ApplicationCard appName='Application 02' />
                 <ApplicationCard appName='Application 03' />
             </div>

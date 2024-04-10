@@ -45,5 +45,6 @@
     width: 50%;
     height: 75%;
     padding: 20px;
-    text-align: left;
+    text-align: center;
+    align-content: center;
 }
